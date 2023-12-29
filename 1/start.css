@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+table ul li {
+    margin: auto;
+}
+
+.header {
+    background-color: darkseagreen;
+}
+
+.title-border {
+    border: 2px solid cadetblue;
+}
+
+.margin-space {
+    margin-top: 20px;
+}
