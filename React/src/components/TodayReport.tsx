@@ -20,9 +20,11 @@ const TodayReport: React.FC = () => {
             <ul>
                 {reportArr.map((report: Report) => (
                     <li key={report.day}>
-                        <h2>{report.day} 일차 과제</h2>
+                        <h2>{report.day} 일차 과제 : 웹사이트 뼈대 만들기!</h2>
 
-                        <pre><strong>이름</strong> : {report.name}</pre>
+                        <h3><strong>이름</strong> : {report.name}</h3>
+
+                        <h3><strong>이메일</strong> : spacedustw@gmail.com</h3>
 
                         <Day1 />
                     </li>
