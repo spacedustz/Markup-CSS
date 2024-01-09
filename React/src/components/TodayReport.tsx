@@ -51,6 +51,7 @@ const CommentTitle = styled.h2`
     font-size: 1.2em;
 `;
 
+
 const Home = () => (
     <TodayReportContainer>
         <div>
