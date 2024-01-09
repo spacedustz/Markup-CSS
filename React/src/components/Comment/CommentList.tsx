@@ -1,4 +1,5 @@
 import React from "react";
+import {CommentListProps} from "../../model/Comment.ts";
 
 const CommentList: React.FC<CommentListProps> = ({ comments }) => (
     <div>
