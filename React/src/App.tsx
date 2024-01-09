@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import {Routes, Route, BrowserRouter} from "react-router-dom";
-import Day1 from "./components/Report/Day1.tsx";
-import Day2 from "./components/Report/Day2.tsx";
+import TodayReport from "./components/TodayReport.tsx";
 
 const AppBlock = styled.div`
     width: 512px;
@@ -18,18 +16,7 @@ const App: React.FC = () => {
         <div>
             <div>
                 <AppBlock>
-                    <BrowserRouter>
-                        <Routes>
-                            <Route path="/Day-01-Assignment" element={<Day1 />}/>
-                            <Route path="/Day-02-Assignment" element={<Day2 />}/>
-                        </Routes>
-                    </BrowserRouter>
-                </AppBlock>
-            </div>
-
-            <div>
-                <AppBlock>
-
+                    <TodayReport />
                 </AppBlock>
             </div>
         </div>
