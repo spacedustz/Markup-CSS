@@ -1,7 +1,7 @@
-interface CommentFormProps {
+export interface CommentFormProps {
     onAddComment: (comment: string) => void;
 }
 
-interface CommentListProps {
+export interface CommentListProps {
     comments: string[];
 }
