@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {CommentFormProps} from "../../model/Comment.ts";
 
 const CommentForm: React.FC<CommentFormProps> = ({ onAddComment }) => {
     const [newComment, setNewComment] = useState<string>('');
