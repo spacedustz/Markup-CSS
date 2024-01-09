@@ -99,7 +99,7 @@ const Day2: React.FC = () => {
                             ))}
                         </ul>
                     </Paragraph>
-                    <Title>기본적인 CSS 정리! 📚</Title>
+                    <Title firstChild={true}>기본적인 CSS 정리! 📚</Title>
                     <SubHeader>CSS는 뼈대를 갗춘 HTML에 디자인을 넣어줍니다.</SubHeader>
                     <Paragraph>
                         <ul>
