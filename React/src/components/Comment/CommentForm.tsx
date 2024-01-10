@@ -1,38 +1,36 @@
-import React, {useState} from "react";
-import {CommentFormProps} from "../../model/Comment.ts";
-import styled from "styled-components";
+import React, { useState } from 'react';
 
-const Input = styled.input`
-    border-radius: 24px;
-    border: 1px solid #dfe1e5;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    margin-right: 10px;
-`;
+interface CommentFormProps {
+    onAddComment: (comment: string) => void;
+}
 
 const CommentForm: React.FC<CommentFormProps> = ({ onAddComment }) => {
     const [newComment, setNewComment] = useState<string>('');
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setNewComment(event.target.value);
+        if (event.target && event.target.value !== null && event.target.value !== undefined) {
+            setNewComment(event.target.value);
+        }
     };
 
     const handleAddComment = () => {
         if (newComment.trim() !== '') {
             onAddComment(newComment);
             setNewComment('');
+            console.log("댓글을 백엔드 서버로 전송합니다. - 댓글 내용 : " + newComment)
+        } else {
+            alert('빈 값은 전송이 안됩니다! 하하하');
         }
     };
 
     return (
         <div>
             <h2>피드백 추가</h2>
-            <Input
+            <input
                 type="text"
                 value={newComment}
                 onChange={handleInputChange}
-                placeholder="피드백을 입력 해주세요!!"
+                placeholder="피드백을 입력해주세요!!"
             />
             <button onClick={handleAddComment}>추가</button>
         </div>
