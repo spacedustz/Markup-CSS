@@ -1,7 +1,9 @@
-export interface CommentFormProps {
-    onAddComment: (comment: string) => void;
+export interface Comment {
+    id: number
+    comment: string
+    createdAt: string
 }
 
 export interface CommentListProps {
-    comments: string[];
+    comments: Comment[];
 }
