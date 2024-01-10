@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {Day1Props} from "../../model/Report.ts";
+import {Nav} from "../../styles/Nav.ts";
 
 const Day1Style = styled.div`
     text-align: center;
@@ -40,6 +41,10 @@ const dayInfo: Day1Props = {
 
 const PreStyle = styled.pre`
     font-style: inherit;
+`;
+const Input = styled.input`
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
 `;
 
 const Day1: React.FC = () => {
@@ -102,11 +107,11 @@ const Day1: React.FC = () => {
                 <TitleBorder>{dayInfo.subTitle[4]}</TitleBorder>
 
                 <PreStyle><strong>Email</strong> : spacedustw@gmail.com</PreStyle>
-                <PreStyle><strong>Github</strong> : <a href="https://github.com/spacedustz">방문하기</a></PreStyle>
-                <PreStyle><strong>Tistory Blog</strong> : <a href="https://iizz.tistory.com">방문하기</a></PreStyle>
+                <PreStyle><strong>Github</strong> : <Nav href="https://github.com/spacedustz" target="_blank">방문하기</Nav></PreStyle>
+                <PreStyle><strong>Tistory Blog</strong> : <Nav href="https://iizz.tistory.com" target="_blank">방문하기</Nav></PreStyle>
 
                 <p>하고싶은 말을 적어주세요!</p>
-                <input type="text"/>
+                <Input type="text"/>
                 <button>전송</button>
             </MainDiv>
         </Day1Style>
