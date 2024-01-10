@@ -1,5 +1,15 @@
 import React, {useState} from "react";
 import {CommentFormProps} from "../../model/Comment.ts";
+import styled from "styled-components";
+
+const Input = styled.input`
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+`;
 
 const CommentForm: React.FC<CommentFormProps> = ({ onAddComment }) => {
     const [newComment, setNewComment] = useState<string>('');
@@ -18,7 +28,7 @@ const CommentForm: React.FC<CommentFormProps> = ({ onAddComment }) => {
     return (
         <div>
             <h2>피드백 추가</h2>
-            <input
+            <Input
                 type="text"
                 value={newComment}
                 onChange={handleInputChange}
