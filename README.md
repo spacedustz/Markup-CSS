@@ -1,8 +1,23 @@
-# Markup-CSS
-📘 Learn HTML &amp; CSS 📘
+## 📘 Learn HTML &amp; CSS 📘
 
----
+> **Server Info**
 
-## 1. 기본적인 HTML & CSS 사용법
+- **Server OS** : Ubuntu 22.04 LTS
+- **Platform** : AWS EC2
 
-- [1. 자주 사용하는 HTML, CSS / CSS 선택자](https://github.com/spacedustz/Markup-CSS/blob/main/Description/1.md)
+<br>
+
+> **FrontEnd**
+
+- **Languages** : TypeScript
+- **Library** : React, axios, styled-component
+- **Component Styling** : Styled-Component
+
+<br>
+
+> **Backend**
+
+- **Languages** : Java
+- **Frameworks** : Spring Boot
+- **Stacks** : Spring Data JPA, Spring WebSocket
+- **DB** : H2 DB Imbedded Mode
