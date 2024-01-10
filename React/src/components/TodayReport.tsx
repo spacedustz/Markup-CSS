@@ -4,6 +4,7 @@ import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Day1 from "./Report/Day1.tsx";
 import Day2 from "./Report/Day2.tsx";
 import CommentApp from "./Comment/CommentApp.tsx";
+import Day34 from "./Report/Day34.tsx";
 
 const TodayReportContainer = styled.div`
     text-align: center;
@@ -63,12 +64,17 @@ const Home = () => (
 
             <DayDiv>
                 <AssignmentTitle>🚩 1일차 과제</AssignmentTitle>
-                <Link to="/day-01-Assignment"><PFont>웹사이트 뼈대 만들기</PFont></Link>
+                <Link to="/Day-01-Assignment"><PFont>웹사이트 뼈대 만들기</PFont></Link>
             </DayDiv>
 
             <DayDiv>
                 <AssignmentTitle>🚩 2일차 과제</AssignmentTitle>
-                <Link to="/day-02-Assignment"><PFont>CSS를 연습하자</PFont></Link>
+                <Link to="/Day-02-Assignment"><PFont>CSS를 연습하자</PFont></Link>
+            </DayDiv>
+
+            <DayDiv>
+                <AssignmentTitle>🚩 3,4일차 과제</AssignmentTitle>
+                <Link to="/Day-03-04-Assignment"><PFont>Google 클론 코딩</PFont></Link>
             </DayDiv>
         </div>
 
@@ -91,6 +97,7 @@ const TodayReport: React.FC = () => {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Day-01-Assignment" element={<Day1/>}/>
                 <Route path="/Day-02-Assignment" element={<Day2/>}/>
+                <Route path="/Day-03-04-Assignment" element={<Day34 />} />
             </Routes>
         </BrowserRouter>
     )
