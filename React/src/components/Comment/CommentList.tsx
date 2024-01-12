@@ -1,7 +1,8 @@
 // CommentList.tsx
-import React from 'react';
+import React, {useState} from 'react';
 import {CommentListProps} from "../../model/Comment.ts";
 import styled from "styled-components";
+import Pagination from "./Pagination.tsx";
 
 const CommentStyle = styled.div`
     table {
@@ -19,7 +20,7 @@ const CommentStyle = styled.div`
     th {
         background-color: #f2f2f2;
     }
-    
+
     td:nth-child(1) {
         width: 5%;
     }
@@ -33,27 +34,46 @@ const CommentStyle = styled.div`
     }
 `;
 
-const CommentList: React.FC<CommentListProps> = ({ comments }) => (
-    <CommentStyle>
-        <table>
-            <thead>
-            <tr>
-                <th>댓글번호</th>
-                <th>댓글</th>
-                <th>작성일자</th>
-            </tr>
-            </thead>
-            <tbody>
-            {comments.map((comment, index) => (
-                <tr key={index}>
-                    <td>{comment.id}</td>
-                    <td>{comment.comment}</td>
-                    <td>{comment.createdAt}</td>
+const CommentList: React.FC<CommentListProps> = ({comments}) => {
+    // 댓글 Pagination.tsx 구현
+    const itemsPerPage = 10;
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const lastItemIdx = currentPage * itemsPerPage; // 현재 페이지 * 페이지당 댓글 개수 1 x 10
+    const firstItemIdx = lastItemIdx - itemsPerPage; // 10 - 10
+    const currentComments = comments.slice(firstItemIdx, lastItemIdx);
+
+    const paginate = (pageNum: number) => setCurrentPage(pageNum);
+
+    return (
+        <CommentStyle>
+            <table>
+                <thead>
+                <tr>
+                    <th>댓글번호</th>
+                    <th>댓글</th>
+                    <th>작성일자</th>
                 </tr>
-            ))}
-            </tbody>
-        </table>
-    </CommentStyle>
-);
+                </thead>
+                <tbody>
+                {currentComments.map((comment, index) => (
+                    <tr key={index}>
+                        <td>{comment.id}</td>
+                        <td>{comment.comment}</td>
+                        <td>{comment.createdAt}</td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
+
+            <Pagination
+                itemsPerPage={itemsPerPage}
+                totalItems={comments.length}
+                currentPage={currentPage}
+                paginate={paginate}
+            />
+        </CommentStyle>
+    );
+};
 
 export default CommentList;
