@@ -12,14 +12,14 @@ const CommentStyle = styled.div`
     }
 
     th, td {
-        border: 2px solid #ddd;
+        border: 1px solid #ddd;
         padding: 12px;
         text-align: center;
-        background-color: #ecdada;
+        background-color: rgba(250, 250, 210, 0.5);
     }
 
     th {
-        background-color: rgba(250, 250, 210, 0.5);
+        background-color: #f4e7e7
     }
 
     td:nth-child(1) {
