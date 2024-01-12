@@ -95,6 +95,64 @@ const SecondFlexboxChild3 = styled.div`
     justify-content: center;
 `;
 
+/* --- Third Container --- */
+
+const ThirdFlexboxContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 1px solid black;
+`;
+
+const ThirdFlexboxChild1 = styled.div`
+    background-color: ${props => props.color};
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+const ThirdFlexboxChild2 = styled.div`
+    background-color: ${props => props.color};
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+/* --- Fourth Container --- */
+
+const FourthFlexboxContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border: 1px solid black;
+`;
+
+const FourthFlexboxChild1 = styled.div`
+    background-color: ${props => props.color};
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+const FourthFlexboxChild2 = styled.div`
+    background-color: ${props => props.color};
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
 const Day5: React.FC = () => {
 
     return (
@@ -139,6 +197,41 @@ const Day5: React.FC = () => {
                     🚩
                 </SecondFlexboxChild3>
             </SecondFlexboxContainer>
+
+            <DescriptionContainer>
+                <Title>😯 3번 문제 풀이 방법</Title>
+                <Paragraph><strong>답안지 본 문제</strong></Paragraph>
+                <Paragraph>박스를 가운데 겹치게는 했는데 작은 상자를 밑으로 내리는 방법 찾다가 그냥 답 봄</Paragraph>
+                <Paragraph>큰 박스의 하위요소로 작은 박스를 두면 되는 거였음ㅜ</Paragraph>
+            </DescriptionContainer>
+
+            <ThirdFlexboxContainer>
+                <ThirdFlexboxChild1 color="lightblue">
+                    🚩
+                    <ThirdFlexboxChild2 color="gray">
+                        🚩
+                    </ThirdFlexboxChild2>
+                </ThirdFlexboxChild1>
+
+            </ThirdFlexboxContainer>
+
+            <DescriptionContainer>
+                <Title>😯 4번 문제 풀이 방법</Title>
+                <Paragraph>flex-direction : column 적용해서 박스 2개 세로로로 배치</Paragraph>
+                <Paragraph>2번쨰 박스(검은색)에만 position: relative 주고 left, bottom 픽셀 50씩 증가</Paragraph>
+            </DescriptionContainer>
+
+            <FourthFlexboxContainer>
+                <FourthFlexboxChild1 color="lightblue">
+                    🚩
+                </FourthFlexboxChild1>
+
+                <FourthFlexboxChild2 color="gray">
+                    🚩
+                </FourthFlexboxChild2>
+            </FourthFlexboxContainer>
+
+
         </Day5Container>
     )
 }
