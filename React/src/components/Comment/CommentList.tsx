@@ -7,6 +7,7 @@ const CommentStyle = styled.div`
     table {
         border-collapse: collapse;
         margin-top: 20px;
+        font-size: 14px;
     }
 
     th, td {
