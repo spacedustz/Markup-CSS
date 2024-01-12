@@ -14,6 +14,7 @@ const ResponsiveContainer = styled.div`
     align-items: flex-start;
     height: 100%;
     flex-wrap: wrap;
+    
 `;
 
 const StyledContainer = styled.div`
@@ -75,6 +76,12 @@ const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-image: url("../../public/assets/Earth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    
 `;
 
 const Home = () => (
@@ -134,8 +141,8 @@ const Home = () => (
                     </MemoDiv>
                 </StyledContainer>
             </div>
-
         </ResponsiveContainer>
+
         <div>
             <StyledContainer>
                 <CommentDiv>
