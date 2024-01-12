@@ -14,7 +14,7 @@ const TodayReportContainer = styled.div`
     color: #333;
     background-color: #f9f9f9;
     padding: 20px;
-    width: 50vh;
+    width: 150%;
 `;
 
 const MemoContainer = styled.div`
@@ -23,7 +23,7 @@ const MemoContainer = styled.div`
     color: #333;
     background-color: #f9f9f9;
     padding: 20px;
-    width: 50vh;
+    width: 150%;
 `;
 
 const TitleDiv = styled.div`
@@ -74,6 +74,9 @@ const CommentTitle = styled.h2`
 const FlexContainer = styled.div`
     display: flex;
     justify-content: space-around;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 `;
 
 const Home = () => (
