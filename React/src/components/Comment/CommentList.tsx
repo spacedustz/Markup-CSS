@@ -19,7 +19,7 @@ const CommentStyle = styled.div`
     }
 
     th {
-        background-color: rgba(236, 218, 218, 0.5);
+        background-color: gba(244, 231, 231, 0.5);
     }
 
     td:nth-child(1) {
