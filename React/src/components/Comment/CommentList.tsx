@@ -14,7 +14,7 @@ const CommentStyle = styled.div`
     th, td {
         border: 1px solid #ddd;
         padding: 12px;
-        text-align: left;
+        text-align: center;
     }
 
     th {
