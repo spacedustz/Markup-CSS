@@ -35,10 +35,6 @@ const ButtonStyle = styled.button`
     }
 `;
 
-const CommentContainer = styled.div`
-    
-`;
-
 const CommentForm: React.FC<CommentFormProps> = ({ onAddComment }) => {
     const [newComment, setNewComment] = useState<string>('');
 
@@ -59,8 +55,8 @@ const CommentForm: React.FC<CommentFormProps> = ({ onAddComment }) => {
     };
 
     return (
-        <CommentContainer>
-            <h3>피드백 추가</h3>
+        <div>
+            <h3>🐣 피드백 추가🐣 </h3>
             <InputStyle
                 type="text"
                 value={newComment}
@@ -68,7 +64,7 @@ const CommentForm: React.FC<CommentFormProps> = ({ onAddComment }) => {
                 placeholder="피드백을 입력해주세요!!"
             />
             <ButtonStyle onClick={handleAddComment}>추가</ButtonStyle>
-        </CommentContainer>
+        </div>
     );
 };
 
