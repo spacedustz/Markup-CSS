@@ -29,36 +29,6 @@ const StyledContainer = styled.div`
   border-radius: 10px;
 `;
 
-const TodayReportContainer = styled.div`
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    padding: 20px;
-    width: 100%;
-    border: 1px solid black;
-`;
-
-const MemoContainer = styled.div`
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    padding: 20px;
-    width: 100%;
-    border: 1px solid black;
-`;
-
-const CommentContainer = styled.div`
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    padding: 20px;
-    width: 100%;
-    border: 1px solid black;
-`;
-
 const TitleDiv = styled.div`
     text-align: center;
     font-style: inherit;
@@ -101,13 +71,6 @@ const CommentTitle = styled.h2`
     margin: 0 0 10px 0;
     margin-top: 30px;
     font-size: 1.2em;
-`;
-
-const FlexContainer = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #f9f9f9;
 `;
 
 const Home = () => (
