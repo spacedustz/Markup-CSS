@@ -271,7 +271,7 @@ const Day5: React.FC = () => {
                 <Paragraph>최상위 컨테이너의 flex-direction, align-items 설정안하고 display: flex만 설정</Paragraph>
                 <Paragraph>파란 박스가 작은 2개의 박스를 하위 요소로 가짐</Paragraph>
                 <Paragraph>2개의 자식을 가진 파란 박스에서 flex-direction을 column으로 줘서 작은 박스를 세로로 정렬</Paragraph>
-                <Paragraph>3번쨰 박스(초록색)만 align-self: center 적용하면 초록색만 오른쪽으로 가짐</Paragraph>
+                <Paragraph>3번쨰 박스(초록색)만 align-self: flex-end 적용하면 초록색만 오른쪽으로 가짐</Paragraph>
             </DescriptionContainer>
 
             <FifthFlexboxContainer>
