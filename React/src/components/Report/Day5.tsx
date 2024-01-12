@@ -220,7 +220,7 @@ const Day5: React.FC = () => {
 
             <DescriptionContainer>
                 <Title>😯 2번 문제 풀이 방법</Title>
-                <Paragraph>flex-direction을 column으로 줘서 일단 세로로 정렬하고, 밑에 2개의 align 위치만 중간, 맨끝으로 변경</Paragraph>
+                <Paragraph>flex-direction을 column으로 줘서 일단 세로로 정렬하고, 밑에 2개의 align 위치만 중간, 맨끝으로 변경 하였습니다.</Paragraph>
             </DescriptionContainer>
 
             <SecondFlexboxContainer>
@@ -240,8 +240,8 @@ const Day5: React.FC = () => {
             <DescriptionContainer>
                 <Title>😯 3번 문제 풀이 방법</Title>
                 <Paragraph><Wrong>답안지 본 문제</Wrong></Paragraph>
-                <Paragraph>박스를 가운데 겹치게는 했는데 작은 상자를 밑으로 내리는 방법 찾다가 그냥 답 봄</Paragraph>
-                <Paragraph>큰 박스의 하위요소로 작은 박스를 두면 되는 거였음ㅜ</Paragraph>
+                <Paragraph>박스를 가운데 겹치게는 했는데 작은 상자를 밑으로 내리는 방법 찾다가 그냥 답을 보았습니다.</Paragraph>
+                <Paragraph>큰 박스의 하위요소로 작은 박스를 두면 되는 거였네요ㅜ</Paragraph>
             </DescriptionContainer>
 
             <ThirdFlexboxContainer>
@@ -256,8 +256,8 @@ const Day5: React.FC = () => {
 
             <DescriptionContainer>
                 <Title>😯 4번 문제 풀이 방법</Title>
-                <Paragraph>flex-direction : column 적용해서 박스 2개 세로로로 배치</Paragraph>
-                <Paragraph>2번쨰 박스(검은색)에만 position: relative 주고 left, bottom 픽셀 50씩 증가</Paragraph>
+                <Paragraph>flex-direction : column 적용해서 박스 2개 세로로로 배치 하였습니다.</Paragraph>
+                <Paragraph>2번쨰 박스(검은색)에만 position: relative 주고 left, bottom 픽셀 50씩 증가 시켰습니다.</Paragraph>
             </DescriptionContainer>
 
             <FourthFlexboxContainer>
@@ -272,10 +272,10 @@ const Day5: React.FC = () => {
 
             <DescriptionContainer>
                 <Title>😯 5번 문제 풀이 방법</Title>
-                <Paragraph>최상위 컨테이너의 flex-direction, align-items 설정안하고 display: flex만 설정</Paragraph>
-                <Paragraph>파란 박스가 작은 2개의 박스를 하위 요소로 가짐</Paragraph>
-                <Paragraph>2개의 자식을 가진 파란 박스에서 flex-direction을 column으로 줘서 작은 박스를 세로로 정렬</Paragraph>
-                <Paragraph>3번쨰 박스(초록색)만 align-self: flex-end 적용하면 초록색만 오른쪽으로 가짐</Paragraph>
+                <Paragraph>최상위 컨테이너의 flex-direction, align-items 설정안하고 display: flex만 설정하여 왼쪽 기본 배치</Paragraph>
+                <Paragraph>파란 박스가 작은 2개의 박스를 하위 요소로 가집니다.</Paragraph>
+                <Paragraph>2개의 자식을 가진 파란 박스에서 flex-direction을 column으로 줘서 작은 박스를 세로로 정렬합니다.</Paragraph>
+                <Paragraph>3번쨰 박스(초록색)만 align-self: flex-end 적용하면 초록색만 오른쪽으로 가집니다.</Paragraph>
             </DescriptionContainer>
 
             <FifthFlexboxContainer>
