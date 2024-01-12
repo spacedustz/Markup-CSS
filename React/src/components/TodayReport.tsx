@@ -13,7 +13,7 @@ const ResponsiveContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100%; /* 뷰포트 높이의 100% */
+    height: 100%;
     flex-wrap: wrap;
 `;
 
@@ -38,7 +38,7 @@ const TitleDiv = styled.div`
 
 const DayDiv = styled.div`
     background-color: #abced4;
-    padding: 15px;
+    padding: 3px;
     margin-bottom: 20px;
     border-radius: 5px;
 `;
@@ -85,7 +85,7 @@ const Home = () => (
             <div>
                 <StyledContainer>
                     <TitleDiv>
-                        <h2><strong>📚 과제 완료 목록📚 </strong></h2>
+                        <h3><strong>📚 과제 완료 목록📚 </strong></h3>
                         <PFont><strong>이름</strong> : 신건우</PFont>
                         <PFont><strong>이메일</strong> : spacedustw@gmail.com</PFont>
                     </TitleDiv>
@@ -115,7 +115,7 @@ const Home = () => (
             <div>
                 <StyledContainer>
                     <TitleDiv>
-                        <h2><strong>📚 메모장 📚</strong></h2>
+                        <h3><strong>📚 메모장 📚</strong></h3>
                         <PFont><strong>이름</strong> : 신건우</PFont>
                         <PFont><strong>이메일</strong> : spacedustw@gmail.com</PFont>
                     </TitleDiv>
