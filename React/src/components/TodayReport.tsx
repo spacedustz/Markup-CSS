@@ -10,9 +10,8 @@ import {Nav} from "../styles/Nav.ts";
 
 const ResponsiveContainer = styled.div`
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     flex-wrap: wrap;
 `;
@@ -76,7 +75,7 @@ const CommentTitle = styled.h2`
 const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 `;
 
 const Home = () => (
