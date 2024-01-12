@@ -32,13 +32,13 @@ const Input = styled.input`
 `;
 
 const SearchIcon = styled.img`
-    position: absolute;
+    position: relative;
     left: 40px;
     color: #9aa0a6;
 `;
 
 const Microphone = styled.img`
-    position: absolute;
+    position: relative;
     right: 40px;
     color: #9aa0a6;
 `;
