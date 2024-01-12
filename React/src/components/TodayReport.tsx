@@ -8,6 +8,27 @@ import Day34 from "./Report/Day34.tsx";
 import Day5 from "./Report/Day5.tsx";
 import {Nav} from "../styles/Nav.ts";
 
+const ResponsiveContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* 뷰포트 높이의 100% */
+    flex-wrap: wrap;
+`;
+
+const StyledContainer = styled.div`
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 600px; /* 필요에 따라 조절 */
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 10px;
+`;
+
 const TodayReportContainer = styled.div`
     text-align: center;
     font-family: Arial, sans-serif;
@@ -90,9 +111,9 @@ const FlexContainer = styled.div`
 `;
 
 const Home = () => (
-        <FlexContainer>
+        <ResponsiveContainer>
             <div>
-                <TodayReportContainer>
+                <StyledContainer>
                     <TitleDiv>
                         <h2><strong>📚 과제 완료 목록📚 </strong></h2>
                         <PFont><strong>이름</strong> : 신건우</PFont>
@@ -118,11 +139,11 @@ const Home = () => (
                         <AssignmentTitle>🚩 5일차 과제 (학습 진행중)</AssignmentTitle>
                         <Link to="/Day-05-Assignment"><PFont>CSS Position & Flexbox</PFont></Link>
                     </DayDiv>
-                </TodayReportContainer>
+                </StyledContainer>
             </div>
 
             <div>
-                <MemoContainer>
+                <StyledContainer>
                     <TitleDiv>
                         <h2><strong>📚 메모장 📚</strong></h2>
                         <PFont><strong>이름</strong> : 신건우</PFont>
@@ -143,20 +164,20 @@ const Home = () => (
                         <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/3.md"
                                               target="_blank">📄 3. Flex Box란?</Nav></AssignmentTitle>
                     </MemoDiv>
-                </MemoContainer>
+                </StyledContainer>
             </div>
 
 
             <div>
-                <CommentContainer>
+                <StyledContainer>
                     <CommentDiv>
                         <CommentTitle>
                             <CommentApp/>
                         </CommentTitle>
                     </CommentDiv>
-                </CommentContainer>
+                </StyledContainer>
             </div>
-        </FlexContainer>
+        </ResponsiveContainer>
 );
 
 const TodayReport: React.FC = () => {
