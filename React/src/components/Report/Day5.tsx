@@ -188,6 +188,10 @@ const FifthFlexboxChild3 = styled.div`
     align-self: flex-end;
 `;
 
+const Wrong = styled.strong`
+    color: red;
+`;
+
 const Day5: React.FC = () => {
 
     return (
@@ -235,7 +239,7 @@ const Day5: React.FC = () => {
 
             <DescriptionContainer>
                 <Title>😯 3번 문제 풀이 방법</Title>
-                <Paragraph><strong>답안지 본 문제</strong></Paragraph>
+                <Paragraph><Wrong>답안지 본 문제</Wrong></Paragraph>
                 <Paragraph>박스를 가운데 겹치게는 했는데 작은 상자를 밑으로 내리는 방법 찾다가 그냥 답 봄</Paragraph>
                 <Paragraph>큰 박스의 하위요소로 작은 박스를 두면 되는 거였음ㅜ</Paragraph>
             </DescriptionContainer>
