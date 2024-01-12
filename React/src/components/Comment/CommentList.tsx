@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 const CommentStyle = styled.div`
     table {
-        width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
     }
@@ -19,13 +18,17 @@ const CommentStyle = styled.div`
     th {
         background-color: #f2f2f2;
     }
+    
+    td:nth-child(1) {
+        width: 5%;
+    }
 
     td:nth-child(2) { /* Comment column */
-        width: 45%;
+        width: 25%;
     }
 
     td:nth-child(3) { /* CreatedAt column */
-        width: 20%;
+        width: 10%;
     }
 `;
 
