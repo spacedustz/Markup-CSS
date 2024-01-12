@@ -15,6 +15,7 @@ const TodayReportContainer = styled.div`
     background-color: #f9f9f9;
     padding: 20px;
     width: 100%;
+    height: 100%;
 `;
 
 const MemoContainer = styled.div`
@@ -24,6 +25,7 @@ const MemoContainer = styled.div`
     background-color: #f9f9f9;
     padding: 20px;
     width: 100%;
+    height: 100%;
 `;
 
 const CommentContainer = styled.div`
