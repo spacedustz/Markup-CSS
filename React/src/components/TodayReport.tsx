@@ -37,14 +37,14 @@ const TitleDiv = styled.div`
 `;
 
 const DayDiv = styled.div`
-    background-color: #abced4;
+    background-color: rgba(171, 206, 212, 0.5);
     padding: 3px;
     margin-bottom: 20px;
     border-radius: 5px;
 `;
 
 const MemoDiv = styled.div`
-    background-color: darkseagreen;
+    background-color: rgba(143, 188, 143, 0.5);
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
