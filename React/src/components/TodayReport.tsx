@@ -14,7 +14,7 @@ const TodayReportContainer = styled.div`
     color: #333;
     background-color: #f9f9f9;
     padding: 20px;
-    width: 150%;
+    width: 50vh;
 `;
 
 const MemoContainer = styled.div`
@@ -23,7 +23,7 @@ const MemoContainer = styled.div`
     color: #333;
     background-color: #f9f9f9;
     padding: 20px;
-    width: 150%;
+    width: 50vh;
 `;
 
 const TitleDiv = styled.div`
