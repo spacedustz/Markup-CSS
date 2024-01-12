@@ -80,6 +80,7 @@ const MainContainer = styled.div`
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    overflow: hidden;
 `;
 
 const Home = () => (
@@ -156,7 +157,6 @@ const Home = () => (
 const TodayReport: React.FC = () => {
 
     return (
-
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>}/>
