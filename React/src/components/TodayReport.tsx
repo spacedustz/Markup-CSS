@@ -74,14 +74,12 @@ const CommentTitle = styled.h2`
 
 const MainContainer = styled.div`
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     background-image: url("../../public/assets/Earth.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    
 `;
 
 const Home = () => (
@@ -141,19 +139,16 @@ const Home = () => (
                     </MemoDiv>
                 </StyledContainer>
             </div>
-        </ResponsiveContainer>
 
-        <div>
-            <StyledContainer>
-                <CommentDiv>
-                    <CommentTitle>
-                        <CommentApp/>
-                    </CommentTitle>
-                </CommentDiv>
-            </StyledContainer>
-        </div>
-        <ResponsiveContainer>
-
+            <div>
+                <StyledContainer>
+                    <CommentDiv>
+                        <CommentTitle>
+                            <CommentApp/>
+                        </CommentTitle>
+                    </CommentDiv>
+                </StyledContainer>
+            </div>
         </ResponsiveContainer>
     </MainContainer>
 );
