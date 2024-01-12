@@ -87,7 +87,6 @@ const FlexContainer = styled.div`
 `;
 
 const Home = () => (
-    <>
         <FlexContainer>
             <div>
                 <TodayReportContainer>
@@ -144,6 +143,7 @@ const Home = () => (
                 </MemoContainer>
             </div>
 
+
             <div>
                 <CommentContainer>
                     <CommentDiv>
@@ -154,7 +154,6 @@ const Home = () => (
                 </CommentContainer>
             </div>
         </FlexContainer>
-    </>
 );
 
 const TodayReport: React.FC = () => {
