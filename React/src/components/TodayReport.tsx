@@ -79,8 +79,7 @@ const MainContainer = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
 `;
 
 const Home = () => (
