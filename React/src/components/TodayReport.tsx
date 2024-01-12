@@ -9,24 +9,24 @@ import Day5 from "./Report/Day5.tsx";
 import {Nav} from "../styles/Nav.ts";
 
 const ResponsiveContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* 뷰포트 높이의 100% */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* 뷰포트 높이의 100% */
     flex-wrap: wrap;
 `;
 
 const StyledContainer = styled.div`
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  padding: 20px;
-  max-width: 600px; /* 필요에 따라 조절 */
-  border: 1px solid black;
-  margin: 20px;
-  border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 600px; /* 필요에 따라 조절 */
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 10px;
 `;
 
 const TitleDiv = styled.div`
@@ -73,7 +73,14 @@ const CommentTitle = styled.h2`
     font-size: 1.2em;
 `;
 
+const MainContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
 const Home = () => (
+    <MainContainer>
         <ResponsiveContainer>
             <div>
                 <StyledContainer>
@@ -130,17 +137,20 @@ const Home = () => (
                 </StyledContainer>
             </div>
 
-
-            <div>
-                <StyledContainer>
-                    <CommentDiv>
-                        <CommentTitle>
-                            <CommentApp/>
-                        </CommentTitle>
-                    </CommentDiv>
-                </StyledContainer>
-            </div>
         </ResponsiveContainer>
+        <div>
+            <StyledContainer>
+                <CommentDiv>
+                    <CommentTitle>
+                        <CommentApp/>
+                    </CommentTitle>
+                </CommentDiv>
+            </StyledContainer>
+        </div>
+        <ResponsiveContainer>
+
+        </ResponsiveContainer>
+    </MainContainer>
 );
 
 const TodayReport: React.FC = () => {
