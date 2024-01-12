@@ -26,6 +26,16 @@ const MemoContainer = styled.div`
     width: 100%;
 `;
 
+const CommentContainer = styled.div`
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+`;
+
 const TitleDiv = styled.div`
     text-align: center;
     font-style: inherit;
@@ -52,7 +62,6 @@ const CommentDiv = styled.div`
     margin-top: 60px;
     margin-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid black;
     padding-bottom: 50px;
 `;
 
@@ -119,27 +128,32 @@ const Home = () => (
                     </TitleDiv>
 
                     <MemoDiv>
-                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/1.md" target="_blank">📄 1. HTML & CSS 기초</Nav></AssignmentTitle>
+                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/1.md"
+                                              target="_blank">📄 1. HTML & CSS 기초</Nav></AssignmentTitle>
                     </MemoDiv>
 
                     <MemoDiv>
-                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/2.md" target="_blank">📄 2. Wire Frame 구조 잡기</Nav></AssignmentTitle>
+                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/2.md"
+                                              target="_blank">📄 2. Wire Frame 구조 잡기</Nav></AssignmentTitle>
                     </MemoDiv>
 
                     <MemoDiv>
-                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/3.md" target="_blank">📄 3. Flex Box란?</Nav></AssignmentTitle>
+                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/3.md"
+                                              target="_blank">📄 3. Flex Box란?</Nav></AssignmentTitle>
                     </MemoDiv>
                 </MemoContainer>
             </div>
-        </FlexContainer>
 
-        <div>
-            <CommentDiv>
-                <CommentTitle>
-                    <CommentApp/>
-                </CommentTitle>
-            </CommentDiv>
-        </div>
+            <div>
+                <CommentContainer>
+                    <CommentDiv>
+                        <CommentTitle>
+                            <CommentApp/>
+                        </CommentTitle>
+                    </CommentDiv>
+                </CommentContainer>
+            </div>
+        </FlexContainer>
     </>
 );
 
