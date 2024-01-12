@@ -51,10 +51,9 @@ const MemoDiv = styled.div`
 
 const CommentDiv = styled.div`
     padding: 2px;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    padding-bottom: 50px;
 `;
 
 const AssignmentTitle = styled.h2`
@@ -68,7 +67,7 @@ const PFont = styled.p`
 
 const CommentTitle = styled.h2`
     margin: 0 0 10px 0;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 1.2em;
 `;
 
