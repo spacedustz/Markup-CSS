@@ -153,6 +153,41 @@ const FourthFlexboxChild2 = styled.div`
     justify-content: center;
 `;
 
+/* --- Fifth Container --- */
+
+const FifthFlexboxContainer = styled.div`
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid black;
+`;
+
+const FifthFlexboxChild1 = styled.div`
+    background-color: ${props => props.color};
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+`;
+
+const FifthFlexboxChild2 = styled.div`
+    background-color: ${props => props.color};
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+const FifthFlexboxChild3 = styled.div`
+    background-color: ${props => props.color};
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+`;
+
 const Day5: React.FC = () => {
 
     return (
@@ -231,7 +266,26 @@ const Day5: React.FC = () => {
                 </FourthFlexboxChild2>
             </FourthFlexboxContainer>
 
+            <DescriptionContainer>
+                <Title>😯 5번 문제 풀이 방법</Title>
+                <Paragraph>최상위 컨테이너의 flex-direction, align-items 설정안하고 display: flex만 설정</Paragraph>
+                <Paragraph>파란 박스가 작은 2개의 박스를 하위 요소로 가짐</Paragraph>
+                <Paragraph>2개의 자식을 가진 파란 박스에서 flex-direction을 column으로 줘서 작은 박스를 세로로 정렬</Paragraph>
+                <Paragraph>3번쨰 박스(초록색)만 align-self: center 적용하면 초록색만 오른쪽으로 가짐</Paragraph>
+            </DescriptionContainer>
 
+            <FifthFlexboxContainer>
+                <FifthFlexboxChild1 color="lightblue">
+
+                    <FifthFlexboxChild2 color="gray">
+                        🚩
+                    </FifthFlexboxChild2>
+
+                    <FifthFlexboxChild3 color="lightgreen">
+                        🚩
+                    </FifthFlexboxChild3>
+                </FifthFlexboxChild1>
+            </FifthFlexboxContainer>
         </Day5Container>
     )
 }
