@@ -47,8 +47,7 @@ const SearchIcon = styled.img`
     color: #9aa0a6;
     
     @media (max-width: 768px) {
-        position: relative;
-        left: 0;
+        margin-left: 10px;
     }
 `;
 
@@ -58,8 +57,7 @@ const Microphone = styled.img`
     color: #9aa0a6;
 
     @media (max-width: 768px) {
-        position: relative;
-        left: 0;
+        margin-right: 10px;
     }
 `;
 
