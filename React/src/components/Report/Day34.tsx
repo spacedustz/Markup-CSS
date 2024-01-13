@@ -128,15 +128,15 @@ const Day34: React.FC = () => {
             <Navigation>
                 <Nav href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">Gmail</Nav>
                 <Nav href="https://www.google.com/imghp?hl=ko&tab=ri&ogbl" target="_blank">Images</Nav>
-                <img src="../../../public/assets/menu.svg" alt="menu"/>
+                <img src="../../../public/assets/Google/menu.svg" alt="menu"/>
             </Navigation>
 
             <Header>
-                <img src="../../../public/assets/google.png" alt="google" width="272" height="92"/>
+                <img src="../../../public/assets/Google/google.png" alt="google" width="272" height="92"/>
                 <div>
-                    <SearchIcon src="../../../public/assets/search.svg" alt="search"/>
+                    <SearchIcon src="../../../public/assets/Google/search.svg" alt="search"/>
                     <Input type="text"/>
-                    <Microphone src="../../../public/assets/microphone.svg" alt="microphone"/>
+                    <Microphone src="../../../public/assets/Google/microphone.svg" alt="microphone"/>
                 </div>
 
                 <Middle>
