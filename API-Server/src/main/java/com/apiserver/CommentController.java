@@ -26,8 +26,8 @@ public class CommentController {
         return ResponseEntity.ok("댓글이 성공적으로 추가 되었습니다");
     }
 
-    @DeleteMapping
-    public void deleteComment(@RequestBody CommentDto.Delete dto) {
-        commentService.deleteOne(dto);
+    @DeleteMapping("/{commentId}")
+    public void deleteComment(@PathVariable long commentId) {
+        commentService.deleteOne(commentId);
     }
 }
