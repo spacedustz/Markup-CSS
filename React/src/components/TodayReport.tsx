@@ -7,6 +7,7 @@ import CommentApp from "./Comment/CommentApp.tsx";
 import Day34 from "./Report/Day34.tsx";
 import Day5 from "./Report/Day5.tsx";
 import {Nav} from "../styles/Nav.ts";
+import Day6 from "./Report/Day6.tsx";
 
 const ResponsiveContainer = styled.div`
     display: flex;
@@ -75,7 +76,7 @@ const CommentTitle = styled.h2`
 const MainContainer = styled.div`
     display: flex;
     align-items: flex-start;
-    background-image: url("../../public/assets/Earth.jpg");
+    background-image: url("../../public/assets/Background/Earth.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -111,6 +112,11 @@ const Home = () => (
                     <DayDiv>
                         <AssignmentTitle>🚩 5일차 과제</AssignmentTitle>
                         <Link to="/Day-05-Assignment"><PFont>CSS Position & Flexbox</PFont></Link>
+                    </DayDiv>
+
+                    <DayDiv>
+                        <AssignmentTitle>🚩 6일차 과제</AssignmentTitle>
+                        <Link to="/Day-06-Assignment"><PFont>Spotify</PFont></Link>
                     </DayDiv>
                 </StyledContainer>
             </div>
@@ -163,6 +169,7 @@ const TodayReport: React.FC = () => {
                 <Route path="/Day-02-Assignment" element={<Day2/>}/>
                 <Route path="/Day-03-04-Assignment" element={<Day34/>}/>
                 <Route path="/Day-05-Assignment" element={<Day5/>}/>
+                <Route path="/Day-06-Assignment" element={<Day6 />} />
             </Routes>
         </BrowserRouter>
     )
