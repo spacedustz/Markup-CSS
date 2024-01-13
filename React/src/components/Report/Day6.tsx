@@ -4,7 +4,6 @@ import {Nav} from "../../styles/Nav.ts";
 
 const MainContainer = styled.div`
     display: flex;
-    border: 1px solid red;
     height: 100vh;
     width: 100%;
 `;
@@ -98,6 +97,57 @@ const LeftLibraryText = styled.div`
     color: #a0a0a0;
 `;
 
+const LeftSubButton = styled.button`
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 15px;
+    color: #3c4043;
+    font-family: Apple SD Gothic Neo, arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124;
+    }
+`;
+
+const LeftGlobeButton = styled(LeftSubButton)`
+    background-color: #303030;
+    display: flex;
+    color: white;
+    
+    p {
+        padding-bottom: 10px;
+    }
+`;
+
+const LibrarySubContainer = styled.div`
+    padding: 3px;
+    background-color: #303030;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    div {
+        padding-top: 7px;
+        padding-left: 7px;
+    }
+`;
+
+const LeftLibraryGlobe = styled(LeftLibrary)`
+    align-self: flex-end;
+`;
+
 
 const Day6: React.FC = () => {
 
@@ -121,7 +171,7 @@ const Day6: React.FC = () => {
                     </LeftImageContainer>
                 </LeftLogo>
 
-                <LeftLibrary>
+                <LeftLibraryGlobe>
                     <LeftLibraryContainer>
                         <LeftImage src="../../../public/assets/Spotify/library.svg" alt="search"/>
                         <LeftLibraryText>내 라이브러리</LeftLibraryText>
@@ -129,21 +179,32 @@ const Day6: React.FC = () => {
                     </LeftLibraryContainer>
 
                     <LeftLibraryContainer>
-                        <div>첫 번째 플레이리스트를 만드세요.</div>
+                        <LibrarySubContainer>
+                            <div><strong>첫 번째 플레이리스트를 만드세요.</strong></div>
+                            <div>어렵지 않아요. 저희가 도와드릴게요.</div>
+                            <LeftSubButton>플레이리스트 만들기</LeftSubButton>
+                        </LibrarySubContainer>
                     </LeftLibraryContainer>
 
                     <LeftLibraryContainer>
-                        <div>팟캐스트 둘러보기</div>
+                        <LibrarySubContainer>
+                            <div><strong>팔로우할 팟캐스트를 찾아보세요</strong></div>
+                            <div>새로운 에피소드에 대한 소식을 알려드릴게요.</div>
+                            <LeftSubButton>팟캐스트 둘러보기</LeftSubButton>
+                        </LibrarySubContainer>
                     </LeftLibraryContainer>
 
                     <LeftLibraryContainer>
-                        <div>쿠키 align-self 적용1</div>
+                        <LeftLink>쿠키</LeftLink>
                     </LeftLibraryContainer>
 
                     <LeftLibraryContainer>
-                        <div>한국어 align-self 적용2</div>
+                        <LeftGlobeButton>
+                            <LeftImage src="../../../public/assets/Spotify/globe.svg" alt="globe"/>
+                            <p>한국어</p>
+                        </LeftGlobeButton>
                     </LeftLibraryContainer>
-                </LeftLibrary>
+                </LeftLibraryGlobe>
             </LeftContainer>
 
             <RightContainer>
