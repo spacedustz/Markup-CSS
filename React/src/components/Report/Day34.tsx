@@ -35,12 +35,11 @@ const Input = styled.input`
     padding-right: 60px;
     
     @media (max-width: 768px) {
-        width: 100%;
+        width: 50%;
         padding-left: 20px;
         padding-right: 20px;
     }
 `;
-
 const SearchIcon = styled.img`
     position: relative;
     left: 40px;
