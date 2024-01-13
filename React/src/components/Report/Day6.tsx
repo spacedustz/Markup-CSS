@@ -1,14 +1,31 @@
 import React from "react";
 import {
-    BottomLanguageIcon, BottomLanguageText,
+    BottomLanguageIcon,
+    BottomLanguageText,
     BottomLink,
-    BottomSection, LanguageButton,
-    LeftContainer, LeftImage,
-    LeftImageContainer, LeftLibraryButton, LeftLibraryText, LeftLink,
+    BottomSection,
+    LanguageButton,
+    LeftContainer,
+    LeftImage,
+    LeftImageContainer,
+    LeftLibraryButton,
+    LeftLibraryText,
+    LeftLink,
     LeftSpotifyLogo,
-    LeftSpotifyLogoText, LeftSubButton, Library, LibrarySub, LibrarySubContainer,
+    LeftSpotifyLogoText,
+    LeftSubButton,
+    Library,
+    LibrarySub,
+    LibrarySubContainer,
     Logo,
-    MainContainer, RightContainer
+    MainContainer,
+    RightContainer,
+    RightHeader,
+    RightHeaderH2,
+    RightHeaderButton,
+    RightHeaderLink,
+    RightTitle,
+    RightHeader2
 } from "../../styles/Day6.ts";
 
 const Day6: React.FC = () => {
@@ -57,7 +74,7 @@ const Day6: React.FC = () => {
                     </LibrarySub>
 
                     <BottomSection>
-                            <BottomLink>쿠키</BottomLink>
+                        <BottomLink href="#">쿠키</BottomLink>
                         <LanguageButton>
                             <BottomLanguageIcon src="../../../public/assets/Spotify/globe.svg" alt="globe"/>
                             <BottomLanguageText>한국어</BottomLanguageText>
@@ -67,9 +84,40 @@ const Day6: React.FC = () => {
             </LeftContainer>
 
 
-
             <RightContainer>
-                <div>dd</div>
+                <RightHeader>
+                    <RightHeaderLink href="#">Premium</RightHeaderLink>
+
+                    <RightHeaderLink href="#">지원</RightHeaderLink>
+
+                    <RightHeaderLink href="#">다운로드</RightHeaderLink>
+
+                    <RightHeaderH2> | </RightHeaderH2>
+
+                    <RightHeaderLink href="#">가입하기</RightHeaderLink>
+
+                    <RightHeaderButton>로그인하기</RightHeaderButton>
+                </RightHeader>
+
+                <RightHeader2>
+                    <RightTitle>Spotify 플레이리스트</RightTitle>
+
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <RightTitle>수면</RightTitle>
+
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </RightHeader2>
             </RightContainer>
         </MainContainer>
     )
