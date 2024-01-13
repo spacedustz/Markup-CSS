@@ -33,4 +33,8 @@ public class CommentService {
 
         return comments;
     }
+
+    public void deleteOne(CommentDto.Delete dto) {
+        commentRepository.deleteById((long) dto.getCommentId());
+    }
 }
