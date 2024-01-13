@@ -41,17 +41,12 @@ const LeftLibrary = styled.div`
     background-color: #2a2a2a;
     display: flex;
     flex-direction: column;
-    height: 20%;
+    border-radius: 5px;
+    height: 80%;
     margin: 4px;
+    color: white;
 `;
 
-const LeftFooter = styled.div`
-    background-color: #2a2a2a;
-    display: flex;
-    flex-direction: column;
-    height: 60%;
-    margin: 4px;
-`
 
 const Day6: React.FC = () => {
 
@@ -65,12 +60,12 @@ const Day6: React.FC = () => {
                 </LeftLogo>
 
                 <LeftLibrary>
-                    Left Middle
+                    <div>내 라이브러리</div>
+                    <div>플레이리스트 만들기</div>
+                    <div>팟캐스트 둘러보기</div>
+                    <div>쿠키 align-self 적용1</div>
+                    <div>한국어 align-self 적용2</div>
                 </LeftLibrary>
-
-                <LeftFooter>
-                    Left Footer
-                </LeftFooter>
             </LeftContainer>
 
             <RightContainer>
