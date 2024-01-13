@@ -230,3 +230,8 @@ export const RightTitle = styled.div`
     margin-left: 20px;
     margin-top: 20px;
 `;
+
+export const RightImg = styled.img`
+    height: 250px;
+    width: 100%;
+`;
