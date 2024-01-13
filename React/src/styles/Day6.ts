@@ -11,14 +11,7 @@ export const LeftContainer = styled.div`
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 30%;
-`;
-
-export const RightContainer = styled.div`
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+    width: 25%;
 `;
 
 /* Left Logo */
@@ -173,4 +166,67 @@ export const BottomLanguageText = styled.p`
     bottom: 8px;
     padding-left: 5px;
     padding-bottom: 5px;
+`;
+
+/* ----- Right Side ----- */
+export const RightContainer = styled.div`
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+`;
+
+export const RightHeader = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000000;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    height: 5%;
+    margin-top: 15px;
+`;
+
+export const RightHeaderH2 = styled.h2`
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+    color: #a0a0a0;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 50px;
+`;
+
+export const RightHeaderLink = styled(Nav)`
+    font-size: 16px;
+    color: #a0a0a0;
+    padding-top: 15px;
+    font-weight: bold;
+`;
+
+export const RightHeaderButton = styled(LeftSubButton)`
+    margin-right: 15px;
+    font-weight: bold;
+`;
+
+export const RightHeader2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    border-radius: 5px;
+    height: 91.8%;
+`;
+
+export const RightTitle = styled.div`
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
 `;
