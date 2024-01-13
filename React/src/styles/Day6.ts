@@ -3,7 +3,7 @@ import {Nav} from "./Nav.ts";
 
 export const MainContainer = styled.div`
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 `;
 
@@ -11,7 +11,8 @@ export const LeftContainer = styled.div`
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 313px;
+    height: 1173px;
 `;
 
 /* Left Logo */
@@ -173,8 +174,8 @@ export const RightContainer = styled.div`
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    height: 100%;
+    width: 1639px;
+    height: 1173px;
 `;
 
 export const RightHeader = styled.div`
