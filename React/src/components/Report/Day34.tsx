@@ -35,7 +35,7 @@ const Input = styled.input`
     padding-right: 60px;
     
     @media (max-width: 768px) {
-        width: 50%;
+        width: 70%;
         padding-left: 20px;
         padding-right: 20px;
     }
