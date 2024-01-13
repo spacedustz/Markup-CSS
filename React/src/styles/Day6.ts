@@ -11,7 +11,7 @@ export const LeftContainer = styled.div`
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 20%;
 `;
 
 /* Left Logo */
