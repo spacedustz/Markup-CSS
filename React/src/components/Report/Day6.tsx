@@ -103,7 +103,9 @@ const Day6: React.FC = () => {
                     <RightTitle>Spotify 플레이리스트</RightTitle>
 
                     <div>
-                        <div></div>
+                        <div>
+                            <a href="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=0212218b5ca54130">Todays. Top Hits</a>
+                        </div>
                         <div></div>
                         <div></div>
                         <div></div>
