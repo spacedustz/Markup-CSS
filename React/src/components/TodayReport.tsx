@@ -115,7 +115,7 @@ const Home = () => (
                     </DayDiv>
 
                     <DayDiv>
-                        <AssignmentTitle>🚩 6일차 과제 (진행중)</AssignmentTitle>
+                        <AssignmentTitle>🚩 6일차 과제</AssignmentTitle>
                         <Link to="/Day-06-Assignment"><PFont>Spotify</PFont></Link>
                     </DayDiv>
                 </StyledContainer>
