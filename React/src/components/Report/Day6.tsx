@@ -23,9 +23,7 @@ import {
     RightHeader,
     RightHeaderH2,
     RightHeaderButton,
-    RightHeaderLink,
-    RightTitle,
-    RightHeader2, RightImg
+    RightHeaderLink, RightImg
 } from "../../styles/Day6.ts";
 
 const Day6: React.FC = () => {
