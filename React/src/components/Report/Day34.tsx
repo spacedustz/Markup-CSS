@@ -19,6 +19,10 @@ const Navigation = styled.div`
 const Header = styled.div`
     margin-top: 300px;
     text-align: center;
+    
+    @media (max-width: 768px) {
+        margin-top: 100px;
+    }
 `;
 
 const Input = styled.input`
@@ -29,18 +33,34 @@ const Input = styled.input`
     border: 1px solid #dfe1e5;
     padding-left: 60px;
     padding-right: 60px;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 `;
 
 const SearchIcon = styled.img`
     position: relative;
     left: 40px;
     color: #9aa0a6;
+    
+    @media (max-width: 768px) {
+        position: relative;
+        left: 0;
+    }
 `;
 
 const Microphone = styled.img`
     position: relative;
     right: 40px;
     color: #9aa0a6;
+
+    @media (max-width: 768px) {
+        position: relative;
+        left: 0;
+    }
 `;
 
 const Middle = styled.div`
