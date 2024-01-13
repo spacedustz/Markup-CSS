@@ -30,11 +30,24 @@ const LeftLogo = styled.div`
     border-radius: 5px;
     margin: 4px;
     height: 20%;
-    
-    img {
-        height: 24px;
-        width: 24px;
-    }
+`;
+
+const LeftSpotifyLogo = styled.img`
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    margin-right: 2px;
+`;
+
+const LeftImage = styled.img`
+    height: 24px;
+    width: 24px;
+`;
+
+const LeftImageContainer = styled.div`
+    display: flex;
+    color: white;
+    margin: 20px;
 `;
 
 const LeftLibrary = styled.div`
@@ -54,9 +67,19 @@ const Day6: React.FC = () => {
         <MainContainer>
             <LeftContainer>
                 <LeftLogo>
-                    <a href="#">홈</a>
-                    <a href="#">검색하기</a>
-                    <img src="../../../public/assets/Spotify/search.svg"/>
+                    <LeftImageContainer>
+                        <LeftSpotifyLogo src="../../../public/assets/Spotify/logo.svg" alt="logo"/>
+                        <div>Spotify</div>
+                    </LeftImageContainer>
+
+                    <LeftImageContainer>
+                        <a href="#">홈</a>
+                    </LeftImageContainer>
+
+                    <LeftImageContainer>
+                        <LeftImage src="../../../public/assets/Spotify/search.svg" alt="search"/>
+                        <a href="#">검색하기</a>
+                    </LeftImageContainer>
                 </LeftLogo>
 
                 <LeftLibrary>
