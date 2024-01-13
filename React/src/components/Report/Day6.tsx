@@ -25,7 +25,7 @@ import {
     RightHeaderButton,
     RightHeaderLink,
     RightTitle,
-    RightHeader2
+    RightHeader2, RightImg
 } from "../../styles/Day6.ts";
 
 const Day6: React.FC = () => {
@@ -83,7 +83,6 @@ const Day6: React.FC = () => {
                 </Library>
             </LeftContainer>
 
-
             <RightContainer>
                 <RightHeader>
                     <RightHeaderLink href="#">Premium</RightHeaderLink>
@@ -99,27 +98,29 @@ const Day6: React.FC = () => {
                     <RightHeaderButton>로그인하기</RightHeaderButton>
                 </RightHeader>
 
-                <RightHeader2>
-                    <RightTitle>Spotify 플레이리스트</RightTitle>
+                <RightImg src="../../../public/assets/Spotify/a.png" alt="a"/>
 
-                    <div>
-                        <div>
-                            <a href="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=0212218b5ca54130">Todays. Top Hits</a>
-                        </div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+                {/*<RightHeader2>*/}
+                {/*    <RightTitle>Spotify 플레이리스트</RightTitle>*/}
 
-                    <RightTitle>수면</RightTitle>
+                {/*    <div>*/}
+                {/*        <div>*/}
+                {/*            <a href="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=0212218b5ca54130">Todays. Top Hits</a>*/}
+                {/*        </div>*/}
+                {/*        <div></div>*/}
+                {/*        <div></div>*/}
+                {/*        <div></div>*/}
+                {/*    </div>*/}
 
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </RightHeader2>
+                {/*<RightTitle>수면</RightTitle>*/}
+
+                {/*    <div>*/}
+                {/*        <div></div>*/}
+                {/*        <div></div>*/}
+                {/*        <div></div>*/}
+                {/*        <div></div>*/}
+                {/*    </div>*/}
+                {/*</RightHeader2>*/}
             </RightContainer>
         </MainContainer>
     )
