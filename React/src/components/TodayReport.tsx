@@ -8,6 +8,7 @@ import Day34 from "./Report/Day34.tsx";
 import Day5 from "./Report/Day5.tsx";
 import {Nav} from "../styles/Nav.ts";
 import Day6 from "./Report/Day6.tsx";
+import Temp from "./Report/Temp.tsx";
 
 const ResponsiveContainer = styled.div`
     display: flex;
@@ -117,6 +118,7 @@ const Home = () => (
                     <DayDiv>
                         <AssignmentTitle>🚩 6일차 과제</AssignmentTitle>
                         <Link to="/Day-06-Assignment"><PFont>Spotify</PFont></Link>
+                        <Link to="/Day-07-Assignment"><PFont>Temp</PFont></Link>
                     </DayDiv>
                 </StyledContainer>
             </div>
@@ -142,6 +144,11 @@ const Home = () => (
                     <MemoDiv>
                         <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/3.md"
                                               target="_blank">📄 3. Flex Box란?</Nav></AssignmentTitle>
+                    </MemoDiv>
+
+                    <MemoDiv>
+                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/4.md"
+                                              target="_blank">📄 4. Flex Box & 단위 & 다양한 팁</Nav></AssignmentTitle>
                     </MemoDiv>
                 </StyledContainer>
             </div>
@@ -170,6 +177,7 @@ const TodayReport: React.FC = () => {
                 <Route path="/Day-03-04-Assignment" element={<Day34/>}/>
                 <Route path="/Day-05-Assignment" element={<Day5/>}/>
                 <Route path="/Day-06-Assignment" element={<Day6 />} />
+                <Route path="/Day-07-Assignment" element={<Temp />} />
             </Routes>
         </BrowserRouter>
     )
