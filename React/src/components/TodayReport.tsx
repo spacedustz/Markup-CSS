@@ -8,6 +8,7 @@ import Day34 from "./Report/Day34.tsx";
 import Day5 from "./Report/Day5.tsx";
 import {Nav} from "../styles/Nav.ts";
 import Day6 from "./Report/Day6.tsx";
+// import Temp from "./Report/Temp.tsx";
 
 const ResponsiveContainer = styled.div`
     display: flex;
@@ -148,6 +149,11 @@ const Home = () => (
                     <MemoDiv>
                         <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/4.md"
                                               target="_blank">📄 4. Flex Box & 단위 & 다양한 팁</Nav></AssignmentTitle>
+                    </MemoDiv>
+
+                    <MemoDiv>
+                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/5.md"
+                                              target="_blank">📄 5. ARGB란? </Nav></AssignmentTitle>
                     </MemoDiv>
                 </StyledContainer>
             </div>
