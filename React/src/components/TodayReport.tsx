@@ -8,7 +8,7 @@ import Day34 from "./Report/Day34.tsx";
 import Day5 from "./Report/Day5.tsx";
 import {Nav} from "../styles/Nav.ts";
 import Day6 from "./Report/Day6.tsx";
-// import Temp from "./Report/Temp.tsx";
+import Day6Old from "./Report/Day6Old.tsx";
 
 const ResponsiveContainer = styled.div`
     display: flex;
@@ -16,7 +16,6 @@ const ResponsiveContainer = styled.div`
     align-items: flex-start;
     height: 100%;
     flex-wrap: wrap;
-    
 `;
 
 const StyledContainer = styled.div`
@@ -33,9 +32,10 @@ const StyledContainer = styled.div`
 
 const TitleDiv = styled.div`
     text-align: center;
-    font-style: inherit;
     font-size: 1.5em;
     margin-bottom: 20px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    text-decoration: none;
 `;
 
 const DayDiv = styled.div`
@@ -61,16 +61,15 @@ const CommentDiv = styled.div`
 
 const AssignmentTitle = styled.h2`
     margin: 0 0 10px 0;
-    font-size: 1.2em;
+    font-size: 15px;
 `;
 
 const PFont = styled.p`
-    font-size: 19px;
+    font-size: 15px;
 `;
 
 const CommentTitle = styled.h2`
     margin: 0 0 10px 0;
-    margin-top: 20px;
     font-size: 1.2em;
 `;
 
@@ -82,6 +81,20 @@ const MainContainer = styled.div`
     background-size: cover;
     background-position: center center;
     height: 100%;
+`;
+
+const AssignmentFont = styled(Link)`
+    font-size: 15px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    
+    &:hover {
+        text-decoration: underline;
+        transition: color 0.5s; // Hover 시 부드러운 연출
+        color: cornflowerblue;
+    }
 `;
 
 const Home = () => (
@@ -97,28 +110,28 @@ const Home = () => (
 
                     <DayDiv>
                         <AssignmentTitle>🚩 1일차 과제</AssignmentTitle>
-                        <Link to="/Day-01-Assignment"><PFont>웹사이트 뼈대 만들기</PFont></Link>
+                        <AssignmentFont to="/Day-01-Assignment"><PFont>웹사이트 뼈대 만들기</PFont></AssignmentFont>
                     </DayDiv>
 
                     <DayDiv>
                         <AssignmentTitle>🚩 2일차 과제</AssignmentTitle>
-                        <Link to="/Day-02-Assignment"><PFont>CSS를 연습하자</PFont></Link>
+                        <AssignmentFont to="/Day-02-Assignment"><PFont>CSS를 연습하자</PFont></AssignmentFont>
                     </DayDiv>
 
                     <DayDiv>
                         <AssignmentTitle>🚩 3,4일차 과제</AssignmentTitle>
-                        <Link to="/Day-03-04-Assignment"><PFont>Google 클론 코딩</PFont></Link>
+                        <AssignmentFont to="/Day-03-04-Assignment"><PFont>Google 클론 코딩</PFont></AssignmentFont>
                     </DayDiv>
 
                     <DayDiv>
                         <AssignmentTitle>🚩 5일차 과제</AssignmentTitle>
-                        <Link to="/Day-05-Assignment"><PFont>CSS Position & Flexbox</PFont></Link>
+                        <AssignmentFont to="/Day-05-Assignment"><PFont>CSS Position & Flexbox</PFont></AssignmentFont>
                     </DayDiv>
 
                     <DayDiv>
                         <AssignmentTitle>🚩 6일차 과제</AssignmentTitle>
-                        <Link to="/Day-06-Assignment"><PFont>Spotify</PFont></Link>
-                        {/*<Link to="/Day-07-Assignment"><PFont>Temp</PFont></Link>*/}
+                        <AssignmentFont to="/Day-06-Assignment"><PFont>Spotify 최신 페이지 (왼쪽부분 미완성)</PFont></AssignmentFont>
+                        <AssignmentFont to="/Day-07-Assignment"><PFont>Spotify 예전 페이지 (진행중)</PFont></AssignmentFont>
                     </DayDiv>
                 </StyledContainer>
             </div>
@@ -182,7 +195,7 @@ const TodayReport: React.FC = () => {
                 <Route path="/Day-03-04-Assignment" element={<Day34/>}/>
                 <Route path="/Day-05-Assignment" element={<Day5/>}/>
                 <Route path="/Day-06-Assignment" element={<Day6 />} />
-                {/*<Route path="/Day-07-Assignment" element={<Temp />} />*/}
+                <Route path="/Day-07-Assignment" element={<Day6Old />} />
             </Routes>
         </BrowserRouter>
     )
