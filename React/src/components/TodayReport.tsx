@@ -131,7 +131,7 @@ const Home = () => (
                     <DayDiv>
                         <AssignmentTitle>🚩 6일차 과제</AssignmentTitle>
                         <AssignmentFont to="/Day-06-Assignment"><PFont>Spotify 최신 페이지 (왼쪽부분 미완성)</PFont></AssignmentFont>
-                        <AssignmentFont to="/Day-07-Assignment"><PFont>Spotify 예전 페이지 (진행중)</PFont></AssignmentFont>
+                        <AssignmentFont to="/Day-06-02-Assignment"><PFont>Spotify 예전 페이지 (진행중)</PFont></AssignmentFont>
                     </DayDiv>
                 </StyledContainer>
             </div>
@@ -195,7 +195,7 @@ const TodayReport: React.FC = () => {
                 <Route path="/Day-03-04-Assignment" element={<Day34/>}/>
                 <Route path="/Day-05-Assignment" element={<Day5/>}/>
                 <Route path="/Day-06-Assignment" element={<Day6 />} />
-                <Route path="/Day-07-Assignment" element={<Day6Old />} />
+                <Route path="/Day-06-02-Assignment" element={<Day6Old />} />
             </Routes>
         </BrowserRouter>
     )
