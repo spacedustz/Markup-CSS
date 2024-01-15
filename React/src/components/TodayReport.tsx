@@ -9,6 +9,7 @@ import Day5 from "./Report/Day5.tsx";
 import {Nav} from "../styles/Nav.ts";
 import Day6 from "./Report/Day6.tsx";
 import Day6Old from "./Report/Day6Old.tsx";
+import Day8 from "./Report/Day8.tsx";
 
 const ResponsiveContainer = styled.div`
     display: flex;
@@ -109,29 +110,40 @@ const Home = () => (
                     </TitleDiv>
 
                     <DayDiv>
-                        <AssignmentTitle>🚩 1일차 과제</AssignmentTitle>
+                        <AssignmentTitle>🚩 1번째 과제</AssignmentTitle>
                         <AssignmentFont to="/Day-01-Assignment"><PFont>웹사이트 뼈대 만들기</PFont></AssignmentFont>
                     </DayDiv>
 
                     <DayDiv>
-                        <AssignmentTitle>🚩 2일차 과제</AssignmentTitle>
+                        <AssignmentTitle>🚩 2번째 과제</AssignmentTitle>
                         <AssignmentFont to="/Day-02-Assignment"><PFont>CSS를 연습하자</PFont></AssignmentFont>
                     </DayDiv>
 
                     <DayDiv>
-                        <AssignmentTitle>🚩 3,4일차 과제</AssignmentTitle>
+                        <AssignmentTitle>🚩 3,4번째 과제</AssignmentTitle>
                         <AssignmentFont to="/Day-03-04-Assignment"><PFont>Google 클론 코딩</PFont></AssignmentFont>
                     </DayDiv>
 
                     <DayDiv>
-                        <AssignmentTitle>🚩 5일차 과제</AssignmentTitle>
+                        <AssignmentTitle>🚩 5번째 과제</AssignmentTitle>
                         <AssignmentFont to="/Day-05-Assignment"><PFont>CSS Position & Flexbox</PFont></AssignmentFont>
                     </DayDiv>
 
                     <DayDiv>
-                        <AssignmentTitle>🚩 6일차 과제</AssignmentTitle>
+                        <AssignmentTitle>🚩 6번째 과제</AssignmentTitle>
                         <AssignmentFont to="/Day-06-Assignment"><PFont>Spotify 최신 페이지 (왼쪽부분 미완성)</PFont></AssignmentFont>
                         <AssignmentFont to="/Day-06-02-Assignment"><PFont>Spotify 예전 페이지 (진행중)</PFont></AssignmentFont>
+                    </DayDiv>
+
+                    <DayDiv>
+                        <AssignmentTitle>🚩 6번째 과제</AssignmentTitle>
+                        <AssignmentFont to="/Day-06-Assignment"><PFont>Spotify 최신 페이지 (왼쪽부분 미완성)</PFont></AssignmentFont>
+                        <AssignmentFont to="/Day-06-02-Assignment"><PFont>Spotify 예전 페이지 (진행중)</PFont></AssignmentFont>
+                    </DayDiv>
+
+                    <DayDiv>
+                        <AssignmentTitle>🚩 7번째 과제</AssignmentTitle>
+                        <AssignmentFont to="/Day-08-Assignment"><PFont>BootStrap</PFont></AssignmentFont>
                     </DayDiv>
                 </StyledContainer>
             </div>
@@ -196,6 +208,7 @@ const TodayReport: React.FC = () => {
                 <Route path="/Day-05-Assignment" element={<Day5/>}/>
                 <Route path="/Day-06-Assignment" element={<Day6 />} />
                 <Route path="/Day-06-02-Assignment" element={<Day6Old />} />
+                <Route path="/Day-08-Assignment" element={<Day8 />} />
             </Routes>
         </BrowserRouter>
     )
