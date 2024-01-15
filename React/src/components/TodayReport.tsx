@@ -180,6 +180,11 @@ const Home = () => (
                         <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/5.md"
                                               target="_blank">📄 5. ARGB란? </Nav></AssignmentTitle>
                     </MemoDiv>
+
+                    <MemoDiv>
+                        <AssignmentTitle><Nav href="https://github.com/spacedustz/Markup-CSS/blob/main/Description/6.md"
+                                              target="_blank">📄 6. BootStrap 사용법 </Nav></AssignmentTitle>
+                    </MemoDiv>
                 </StyledContainer>
             </div>
 
