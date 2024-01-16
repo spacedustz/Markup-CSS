@@ -26,7 +26,7 @@ const MainNav: React.FC = () => {
                         navbarScroll
                     >
                         <Nav.Link href="https://github.com/spacedustz" target="_blank">Github</Nav.Link>
-                        <Nav.Link href="https://iizz.tistory.com">Blog</Nav.Link>
+                        <Nav.Link href="https://iizz.tistory.com" target="_blank">Blog</Nav.Link>
                         <NavDropdown title="과제 제출" id="navbarScrollingDropdown">
                             <NavDropdown.Item as={NavLink} to="/Day-01-Assignment">1. 자기소개 페이지</NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to="/Day-02-Assignment">2. CSS 연습</NavDropdown.Item>
