@@ -34,6 +34,7 @@ const MainNav: React.FC = () => {
                             <NavDropdown.Item as={NavLink} to="/Day-05-Assignment">4. Position & Flex Box</NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to="/Day-06-Assignment">5-1. Spotify 최신 페이지</NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to="/Day-06-02-Assignment">5-2. Spotify 이전 페이지</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/Day-06-02-Assignment">6. BootStrap 웹사이트 만들기</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="메모장" id="navbarScrollingDropdown">
                             <Memo />
