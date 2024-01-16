@@ -9,12 +9,22 @@ import Day6 from "./Report/Day6.tsx";
 import Day6Old from "./Report/Day6Old.tsx";
 import {CommentDiv, CommentTitle, MainContainer, ResponsiveContainer, StyledContainer} from "../styles/TodayRepost.ts";
 import MainNav from "../styles/BootStrap/MainNavBar.tsx";
+import Memo from "./Memo.tsx";
+import Report from "./Report/Report.tsx";
+import Day8 from "./Report/Day8.tsx";
 
 const Home = () => (
     <MainContainer className="container">
         <MainNav/>
-
         <ResponsiveContainer>
+            <div>
+                <Report />
+            </div>
+
+            <div>
+                <Memo />
+            </div>
+
             <div>
                 <StyledContainer>
                     <CommentDiv>
@@ -40,6 +50,7 @@ const TodayReport: React.FC = () => {
                 <Route path="/Day-05-Assignment" element={<Day5/>}/>
                 <Route path="/Day-06-Assignment" element={<Day6/>}/>
                 <Route path="/Day-06-02-Assignment" element={<Day6Old/>}/>
+                <Route path="/Day-08-Assignment" element={<Day8/>}/>
             </Routes>
         </BrowserRouter>
     )
