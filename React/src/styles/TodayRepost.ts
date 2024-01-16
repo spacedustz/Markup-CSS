@@ -66,13 +66,12 @@ export const CommentTitle = styled.h2`
 
 export const MainContainer = styled.div`
     display: flex;
-    //align-items: flex-start;
     flex-direction: column;
     background-image: url("../../public/assets/Background/Earth.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 1000px;
+    height: 100%;
     width: 100%;
 `;
 
