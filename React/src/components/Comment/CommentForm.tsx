@@ -11,6 +11,7 @@ const InputStyle = styled.input`
     height: 22px;
     border: 1px solid #dfe1e5;
     text-align: center;
+    font-size: 12px;
 `;
 
 const ButtonStyle = styled.button`
