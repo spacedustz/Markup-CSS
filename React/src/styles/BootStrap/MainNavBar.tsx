@@ -10,6 +10,7 @@ import Memo from "../../components/Memo.tsx";
 const MainFont = styled(Navbar)`
     font-weight: bold;
     font-size: 15px;
+    background-color: #bbd9bb;
 `;
 
 const MainNav: React.FC = () => {

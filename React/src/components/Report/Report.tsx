@@ -35,6 +35,11 @@ const Report: React.FC = () => {
                 <AssignmentFont to="/Day-06-Assignment"><PFont>Spotify 최신 페이지 (왼쪽부분 미완성)</PFont></AssignmentFont>
                 <AssignmentFont to="/Day-06-02-Assignment"><PFont>Spotify 예전 페이지 (진행중)</PFont></AssignmentFont>
             </DayDiv>
+
+            <DayDiv>
+                <AssignmentTitle>🚩 7번째 과제</AssignmentTitle>
+                <AssignmentFont to="/Day-08-Assignment"><PFont>BootStrap - 웹사이트 만들기</PFont></AssignmentFont>
+            </DayDiv>
         </StyledContainer>
     )
 }
